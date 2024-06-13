@@ -17,7 +17,7 @@ No seu projeto local, crie o arquivo firebase.js em src/infra/.
 
 Adicione as credenciais que você obteve no Firebase ao arquivo firebase.js. Ele deve ter a seguinte estrutura:
 
-
+```
 // src/infra/firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
@@ -30,6 +30,7 @@ const firebaseConfig = {
   messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
   appId: "YOUR_APP_ID"
 };
+```
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
