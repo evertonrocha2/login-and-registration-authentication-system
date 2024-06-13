@@ -25,3 +25,4 @@ src/infra/firebase.js
 *.sln
 *.sw?
 
+firebase.js
