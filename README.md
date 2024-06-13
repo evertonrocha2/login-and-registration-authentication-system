@@ -9,7 +9,9 @@ Clique em "Adicionar Projeto" e siga as instruções para criar um novo projeto.
 Configure o App Web:
 
 Dentro do console do Firebase, vá até a seção "Configurações do Projeto" e selecione "Configurações Gerais".
+
 Na aba "Seus apps", clique no ícone </> para configurar um novo app web.
+
 Siga as instruções para registrar seu app e obter suas credenciais.
 Adicione as Credenciais ao Projeto:
 
@@ -18,6 +20,7 @@ No seu projeto local, crie o arquivo firebase.js em src/infra/.
 Adicione as credenciais que você obteve no Firebase ao arquivo firebase.js. Ele deve ter a seguinte estrutura:
 
 ```
+
 // src/infra/firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
@@ -30,16 +33,18 @@ const firebaseConfig = {
   messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
   appId: "YOUR_APP_ID"
 };
-```
+
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export { auth };
+
+```
 Instale as Dependências:
 
-Execute npm install para instalar todas as dependências necessárias.
+Execute ```npm install``` para instalar todas as dependências necessárias.
 Inicie o Projeto:
 
-Use npm start para iniciar o projeto.
-Exemplo de firebase.js
+Use ```npm start``` para iniciar o projeto.
+
