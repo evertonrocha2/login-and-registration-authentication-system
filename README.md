@@ -1,4 +1,5 @@
 Configuração do Projeto
+
 Este projeto utiliza Firebase para autenticação e outros serviços. Por motivos de segurança, o arquivo src/infra/firebase.js que contém as configurações do Firebase não está incluído no repositório. Você precisará fornecer suas próprias credenciais do Firebase para utilizar o sistema.
 
 Passos para Obter Suas Próprias Credenciais do Firebase
